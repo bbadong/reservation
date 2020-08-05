@@ -3,6 +3,7 @@ package hrs;
 public class ReservationCanceled extends AbstractEvent {
 
     private Long id;
+    private Long reservationId;
     private String customerName;
     private Integer nights;
     private String checkinDate;
@@ -18,6 +19,14 @@ public class ReservationCanceled extends AbstractEvent {
     public void setId(Long id) {
         this.id = id;
     }
+
+    public Long getReservationId() {
+        return reservationId;
+    }
+    public void setReservationId(Long reservationId) {
+        this.reservationId = reservationId;
+    }
+
     public String getCustomerName() {
         return customerName;
     }

@@ -54,10 +54,11 @@ public class Reservation {
         if(!"Reservation Canceled".equals(getStatus()) && "delete".equals(getUpdateGubun())){
             ReservationCanceled reservationCanceled = new ReservationCanceled();
             BeanUtils.copyProperties(this, reservationCanceled);
+            //reservationCanceled.setReservationId();
             reservationCanceled.publishAfterCommit();
 
             try {
-                Thread.currentThread().sleep((long) (1000 + Math.random() * 2100));
+                Thread.currentThread().sleep((long) (800 + Math.random() * 420));
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
