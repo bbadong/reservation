@@ -57,7 +57,7 @@ public class Reservation {
             reservationCanceled.publishAfterCommit();
 
             try {
-                Thread.currentThread().sleep((long) (100 + Math.random() * 520));
+                Thread.currentThread().sleep((long) (1000 + Math.random() * 2100));
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
