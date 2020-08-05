@@ -55,7 +55,15 @@ public class Reservation {
             ReservationCanceled reservationCanceled = new ReservationCanceled();
             BeanUtils.copyProperties(this, reservationCanceled);
             reservationCanceled.publishAfterCommit();
+
+            try {
+                Thread.currentThread().sleep((long) (400 + Math.random() * 220));
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
+
+
     }
 
     @PreUpdate

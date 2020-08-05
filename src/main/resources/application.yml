@@ -82,7 +82,7 @@ external:
 
 feign:
   hystrix:
-    enabled: false
+    enabled: true
 
 hystrix:
   command:
