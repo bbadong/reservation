@@ -57,11 +57,11 @@ public class Reservation {
             //reservationCanceled.setReservationId();
             reservationCanceled.publishAfterCommit();
 
-            try {
-                Thread.currentThread().sleep((long) (800 + Math.random() * 420));
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+//            try {
+//                Thread.currentThread().sleep((long) (800 + Math.random() * 420));
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
         }
 
 
